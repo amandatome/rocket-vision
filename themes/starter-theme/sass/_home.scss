@@ -1,0 +1,93 @@
+.container {
+  @include titletop;
+}
+
+//Hero Section
+.titles {
+  @include titles
+}
+
+.wrap {
+  width: 20%;
+}
+
+.home-hero {
+  padding-right: 400px;
+}
+
+//About Us Section
+.home-about  {
+  @include textbox;
+  margin-top: 100px;
+}
+
+.about-title {
+  margin-bottom: 40px!important;
+  margin-top: 40px!important;
+}
+
+//Featured Employee
+.featured-employee {
+  @include textbox;
+}
+
+.headline {
+  padding-top: 40px;
+}
+
+.featured-name {
+  line-height: 55px;
+  margin-bottom: 48px;
+}
+
+@media (max-width: $xl) {
+  .alignright, .alignleft{
+    float:none;
+  }
+  .container{
+    background-image: none!important;
+  }
+  h1 {
+    font-size: 40pt;
+    margin: 0!important;
+    text-align: center;
+  }
+  .home-hero {
+    padding-right: 0px;
+    text-align: center;
+  }
+  .home-about, .featured-employee{
+    text-align: center;
+  }
+  #home {
+    text-align: center;
+  }
+  .wrap {
+    width: auto;
+  }
+  .featured-employee, .home-about {
+    padding: 50px 25px 50px 25px;
+  }
+}
+
+@media (max-width: $xs) {
+  .container{
+    background-image: none!important;
+  }
+  h1 {
+    font-size: 40pt;
+    margin: 0!important;
+  }
+  .home-hero {
+    padding-right: 0px;
+  }
+  #home {
+    text-align: center
+  }
+  .wrap {
+    width: auto;
+  }
+  .featured-employee, .home-about {
+    padding: 20px 25px 30px 25px;
+  }
+}

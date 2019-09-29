@@ -1,0 +1,37 @@
+// Mobile Breakpoints
+$xl: 1200px;
+$lg: 980px;
+$md: 768px;
+$sm: 600px;
+$xs: 450px;
+
+//Colors
+$footerbackground: #062288;
+$textcolor: #fbf8fa;
+$neonpink: #ff009b;
+$gradientblue: #0c2182;
+$gradientred: #810207;
+$boxcolor: #020726;
+
+
+@mixin textbox {
+  background-color: $boxcolor;
+  padding: 60px 65px 80px 65px;
+  margin-bottom: 60px; 
+}
+
+@mixin titletop {
+  padding-top: 100px!important;
+}
+
+@mixin titles{
+  margin-top: 150px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+@media (max-width: $xs) {
+  @mixin titles {
+    margin-top: 0;
+  }
+}

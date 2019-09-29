@@ -1,0 +1,248 @@
+//Blog Page
+.post-title {
+  text-align: center;
+  @include titletop;
+  margin-top: 100px;
+}
+.select-blog {
+  position: relative;
+  width: 250px;
+  margin: auto;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 0px 25px;
+    font-size: 16pt;
+    line-height: 1.75;
+    color: $neonpink;
+    background-color: $boxcolor;
+    -ms-word-break: normal;
+    word-break: normal;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &::after {
+    content: "\f078";
+    font: normal normal normal 17px FontAwesome;
+    color: $textcolor;
+    right: 11px;
+    top: 20px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.dropdown {
+  margin-top:450px;
+}
+
+#cat {
+  outline: none;
+  padding-left: 15px;
+}
+
+.category-select {
+  margin: 0;
+  outline: none;
+}
+
+#categories {
+  text-align: center !important;
+}
+
+.postform {
+  background: $boxcolor;
+  color: $neonpink;
+  border-color: $boxcolor;
+  margin-top: 20%;
+}
+
+.post-display {
+  background: $boxcolor;
+  width: 31%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 50px 15px 0 10px;
+  height: 700px;
+  position: relative;
+  img {
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.entry-content {
+  padding: 225px 25px 35px 25px;
+  margin-top: 40px;
+}
+
+.read-more {
+  margin-top: 5%;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+//Individual Posts
+.breadcrumbs {
+  color: $textcolor;
+  margin-top: 23px;
+  margin-bottom: 45px;
+}
+
+.blog-info-wrap {
+  width: 90%;
+  margin: auto;
+  min-height: 450px;
+  line-height: 50px;
+}
+
+.cat-single {
+  line-height: 0%;
+  margin-bottom: -2%;
+}
+
+.author-single {
+  line-height: 0%;
+  margin-top: 2%;
+}
+
+.chevron {
+  color: $textcolor;
+  font-size: 26pt;
+  font-weight: bold;
+}
+
+.chevron-breadcrumbs {
+  color: $neonpink !important;
+  font-size: 26pt !important;
+  font-weight: bold !important;
+}
+
+//Page Navigation
+.page-nav {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.page-numbers {
+  padding: 10px 20px;
+  background-color: $boxcolor;
+  margin-right: 2%;
+  color: $neonpink;
+  font-size: 16pt;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.page-numbers.current {
+  padding: 10px 20px;
+  border: $neonpink solid 3px;
+}
+
+//Category Page
+.cat-title {
+  margin-bottom: -40% !important;
+}
+// MEDIA QUERIES=======================================
+@media (max-width: $xl) {
+  .post-display { 
+    width: 47%;
+    height: 750px;
+  }
+  .entry-content {
+    padding: 300px 25px 35px 25px;
+    margin-top: 40px;
+  }
+  .dropdown {
+    margin-top: 50px;
+  }
+  .cat-title {
+    margin-bottom: -20% !important;
+  }
+}
+
+@media (max-width: $lg) {
+  .post-display { 
+    width: 46%;
+    height: 750px;
+  }
+  .entry-content {
+    padding: 225px 25px 35px 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $md) {
+  .post-display { 
+    width: 45%;
+    height: 750px;
+  }
+  .entry-content {
+    padding: 150px 25px 35px 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $md) {
+  .post-display { 
+    width: 44%;
+    height: 800px;
+  }
+  .entry-content {
+    padding: 100px 25px 35px 25px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: $xs) {
+  .post-title {
+    margin-top: 0;
+    padding-top: 0 !important;
+  }
+  // Category dropdown =========================
+  .dropdown {
+    margin-top: 0;
+  }
+  // Blog excerpts and image display============
+  .post-display {
+    width: 100%;
+    margin: 25px auto;
+    height: auto;
+  }
+  .entry-content {
+    padding: 0px 10px 20px 10px;
+    margin-top: 275px;
+  }
+  //Category Page ==============================
+  .cat-title {
+    font-size: 20pt !important;
+    line-height: 50px !important;
+  }
+  .blog-info-wrap {
+    width: 90%;
+    min-height: 100%;
+    line-height: 100px;
+    text-align: center;
+  }
+  .post-image {
+    margin-bottom: 450px;
+  }
+  .member-content {
+    margin-top: 0;
+  }
+  .navigation {
+    text-align: center;
+    margin-right: 3%;
+  }
+}

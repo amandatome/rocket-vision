@@ -1,0 +1,229 @@
+.title-wrap {
+  h1 {
+    margin-top: 15%;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  background-color: $boxcolor;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 4px;
+  color: $textcolor;
+}
+
+.budget-select {
+  position: relative;
+  min-width: 390px;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 0px 15px;
+    font-size: 16pt;
+    line-height: 1.75;
+    color: $neonpink;
+    background-color: $boxcolor;
+    -ms-word-break: normal;
+    word-break: normal;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &::after {
+    content: "\f078";
+    font: normal normal normal 17px FontAwesome;
+    color: $textcolor;
+    right: 11px;
+    top: 45px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+
+
+#submit {
+  text-align: center;
+  margin-right: 250px !important;
+  margin-top: 150px;
+}
+
+.wpcf7-submit {
+  outline: none;
+  background-color: transparent;
+  color: $textcolor !important;
+  padding: 6px 55px 6px 55px;
+  border: $neonpink solid 3px;
+  text-transform: uppercase;
+  font-size: 16pt !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.address {
+  color: $neonpink;
+  font-weight: bolder;
+  margin-bottom: 5%;
+}
+
+form {
+  margin-left: 200px;
+  margin-top: 320px;
+  outline: none;
+  font-size: 14pt !important;
+}
+
+#email-label,
+#name-label,
+.phone-budget {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.phone-budget,
+#about-project-label {
+  margin-top: 25px;
+}
+
+#email-label {
+  margin-left: 10px;
+}
+#about-project-label {
+  float: right;
+  margin-right: 23%;
+}
+
+.contact {
+  margin-bottom: 50px;
+}
+
+@media (max-width: $xl) {
+  .container {
+    background-image: none !important;
+  }
+
+  #about-project-label {
+    float: none;
+  }
+
+  .wpcf7 {
+    display: flex;
+    margin-left: 45px!important;
+  }
+  form {
+    margin-top: 100px;
+    outline: none;
+    font-size: 14pt !important;
+    margin: auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 450px;
+  }
+
+  #submit {
+    margin: 15px 0 0 0 !important;
+  }
+
+  #email-label,
+  #name-label,
+  .phone-label {
+    display: block;
+  }
+  #email-label,
+  .budget-select {
+    margin: 55px 0;
+  }
+}
+
+@media (max-width: $sm) {
+  // .wpcf7 {
+  //   display: flex;
+  //   margin-left: 0px!important;
+  //   padding: 5px!important;
+  // }
+
+}
+
+@media (max-width: $xs) {
+  h1 {
+    font-size: 40pt;
+    margin: 0!important;
+    text-align: center!important;
+  }
+  .wpcf7 {
+    display: flex;
+    margin-left: 0px!important;
+    padding: 25px!important;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 350px;
+  }
+  .budget-select {
+    position: relative;
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wpcf7 {
+    padding: 5px!important;
+  }
+}
+
+@media (max-width: 320px) {
+  .wpcf7 {
+    padding: 5px!important;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 280px;
+  }
+  .budget-select {
+    position: relative;
+    min-width: 250px;
+  }
+}
+//Responsive map
+.responsive-map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.responsive-map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

@@ -1,0 +1,210 @@
+// Team Member Area - Get To Know Us
+.team-member-section {
+  display: inline-block;
+  margin: 45px;
+}
+
+.employee-name {
+  color: $textcolor;
+}
+
+.team-members {
+  background: linear-gradient(rgb(9, 10, 59), rgb(2, 7, 38));
+  margin-top: -100px;
+  text-align: center;
+  padding: 100px 0 100px;
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.employee-image {
+  border-radius: 50%;
+}
+
+.info-color {
+  color: $neonpink;
+}
+//Individual Pages
+.member-information-wrap {
+  width: 90%;
+  margin: auto;
+  min-height: 480px;
+  line-height: 70px;
+  p {
+    margin-top: 0 !important;
+    line-height: 65%;
+  }
+}
+
+.member-name,
+.entry-title {
+  text-transform: uppercase;
+  margin-top: 3%;
+}
+.entry-title {
+  font-size: 50px;
+}
+
+#additional-info {
+  font-size: 16pt;
+}
+
+.featured-image {
+  float: right;
+  width: 600px !important;
+  height: 400px !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 88% 12%;
+  object-position: 88% 12%;
+}
+
+.member-content {
+  background: $boxcolor;
+  @include textbox;
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+.member-nav {
+  margin-bottom: 15%;
+}
+
+.member-nav-prev,
+.member-nav-next {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.member-nav-next {
+  float: right;
+  margin-right: 3%;
+}
+
+.member-nav-prev {
+  text-align: right;
+  margin-left: 2%;
+}
+
+.image,
+.nav-content-next,
+.nav-content-prev {
+  display: inline-block;
+  vertical-align: top;
+}
+// MEDIA QUERIES=======================================
+@media (max-width: $xl) {
+  .team-member-section {
+    display: inline-block;
+    margin: 10%;
+  }
+  .beginnings {
+    h2 {
+      text-align: center;
+    }
+  }
+  //Single Page
+  .breadcrumbs,
+  .chevron-breadcrumbs {
+    text-align: center;
+    line-height: 50px;
+  } 
+  .featured-image {
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto
+  }
+  .member-name, #additional-info, .member-job-title, .facts {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: $lg) {
+ .image {
+    display: none;
+  }
+  .member-nav-next,
+  .member-nav-prev {
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    float: none;
+    margin-right: 0;
+  }
+}
+@media (max-width: $md) {
+  .breadcrumbs,
+  .chevron-breadcrumbs {
+    text-align: center;
+    line-height: 50px;
+  }
+  .team-member-section {
+    margin-top: -40px;
+    display: inline-block;
+    margin: 10%;
+  }
+  .team-members {
+    margin-top: -125px;
+  }
+  //Single Member page
+  .member-name {
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 15px;
+  }
+  .member-content {
+    padding-top: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $sm) {
+  .breadcrumbs,
+  .chevron-breadcrumbs {
+    font-size: 18pt !important;
+    text-align: center;
+    line-height: 50px;
+  }
+  .team-members {
+   margin-top: 0px;
+  }
+  .image-padding {
+    margin-top: 25px;
+  }
+  .team-member-section {
+    margin: 5%;
+  }
+}
+
+@media (max-width: $xs) {
+  // Single Member Page
+  .breadcrumbs,
+  .chevron-breadcrumbs {
+    font-size: 12pt !important;
+    line-height: 20px;
+  }
+  .chevron {
+    font-size: 24pt !important;
+  }
+  .member-name {
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 0!important;
+  }
+  .member-information-wrap {
+    margin-bottom: 20px;
+    p {
+      line-height: 100%;
+    }
+  }
+  .member-content {
+    text-align: center;
+    padding: 10px;
+  }
+}

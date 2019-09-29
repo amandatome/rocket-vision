@@ -1,0 +1,127 @@
+.services-title {
+  margin: 20% 0 0 5%;
+}
+
+.text-box {
+  @include textbox;
+  margin-bottom: 20%;
+}
+
+.services {
+  margin-top: 5%;
+  button {
+    text-align: center !important;
+    padding: 12px;
+  }
+}
+
+.align-services {
+  display: flex!important;
+  justify-content: space-evenly
+ }
+
+
+/* Style tab links */
+.tablink {
+  text-align: center !important;
+  color: $textcolor;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16pt;
+  width: 15%;
+  white-space: pre-line;
+  &::after {
+    content: "\A \f078";
+    font: normal normal normal 17px FontAwesome;
+    color: $textcolor;
+  }
+}
+
+.active-services {
+  color: $neonpink !important;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: $textcolor;
+  display: none;
+  text-align: center;
+}
+
+.select-div {
+  position: relative;
+  min-width: 350px;
+  margin: 50px 23%;
+  display: none;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0px;
+    padding: 0px 25px;
+    font-size: 16pt;
+    line-height: 1.75;
+    color: $neonpink;
+    background-color: $boxcolor;
+    -ms-word-break: normal;
+    word-break: normal;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &::after {
+    content: "\f078";
+    font: normal normal normal 17px FontAwesome;
+    color: $textcolor;
+    right: 11px;
+    top: 18px;
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: $xl) {
+ 
+  .services {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: $lg) {
+  .services {
+    button {
+      display: none;
+    }
+    .select-div {
+      display: block!important;
+      margin-bottom: 50px;
+    }
+  }
+  .tabcontent {
+    display: none;
+  }
+  #services-select {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $sm) {
+  .select-div {
+    min-width: 300px!important;
+    margin: 50px 23%;
+  }
+}
+
+@media (max-width: $xs) {
+  .select-div {
+    min-width: 300px;
+    margin: 50px 0%;
+  }
+}
