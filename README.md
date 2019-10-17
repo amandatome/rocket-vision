@@ -1,6 +1,5 @@
 # Rocket Vision
-
-A WordPress site custom theme built from the bottom up.
+A WordPress site with a custom theme built from the bottom up.
 
 ## Website
 https://wordpress-projects.website/rocket-vision/
@@ -12,3 +11,8 @@ https://wordpress-projects.website/rocket-vision/
 * Javascript
 * jQuery
 * Google Fonts
+
+## Screen Capture
+![Rocket Agency](rocket-agency.png)
+
+Site designs provided through [Juno College of Technology](https://junocollege.com/)Juno College Custom Themes course.
