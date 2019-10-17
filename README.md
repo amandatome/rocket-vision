@@ -15,4 +15,4 @@ https://wordpress-projects.website/rocket-vision/
 ## Screen Capture
 ![Rocket Agency](rocketvision.png)
 
-Site designs provided through ![Juno College of Technology](https://junocollege.com/) Juno College Custom Themes course.
+Site designs provided through [Juno College of Technology](https://junocollege.com/) Custom Themes course.
