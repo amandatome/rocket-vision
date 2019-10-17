@@ -13,6 +13,6 @@ https://wordpress-projects.website/rocket-vision/
 * Google Fonts
 
 ## Screen Capture
-![Rocket Agency](rocket-agency.png)
+![Rocket Agency](rocketvision.png)
 
 Site designs provided through [Juno College of Technology] (https://junocollege.com/)Juno College Custom Themes course.
